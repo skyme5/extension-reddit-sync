@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;EAKE;AAEF,MAAO;EACH,MAAM,EAAE,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,iBAA4B;EACzC,KAAK,EAAE,gBAAgB;EACvB,UAAU,EAAE,kBAAkB;;AAGlC,YAAY;EACR,OAAO,EAAE,IAAI",
+"sources": ["reddit.scss"],
+"names": [],
+"file": "reddit.css"
+}

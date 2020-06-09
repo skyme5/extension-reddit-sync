@@ -1,0 +1,29 @@
+{
+  "background": {
+    "scripts": ["background-request.js", "background-reddit.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://reddit.com/*", "https://*.reddit.com/*"],
+      "css": ["css/toast.css", "css/reddit.css"],
+      "js": ["js/reddit.js", "js/reddit_utility.js"]
+    }
+  ],
+  "description": "Utilities for Reddit.",
+  "browser_action": {
+    "default_icon": {
+      "192": "images/reddit.png"
+    }
+  },
+  "icons": {
+    "192": "images/reddit.png"
+  },
+  "manifest_version": 2,
+  "minimum_chrome_version": "47",
+  "name": "Reddit Sync by Sky",
+  "permissions": ["tabs", "http://127.0.0.1/*", "https://localhost/*"],
+  "version": "1.0.0",
+  "web_accessible_resources": [],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self' https://www.gstatic.com/*"
+}

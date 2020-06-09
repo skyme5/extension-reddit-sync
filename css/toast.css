@@ -1,0 +1,53 @@
+/*
+* @Author: Sky
+* @Date:   2019-01-31 22:15:02
+* @Last Modified by:   Sky
+* @Last Modified time: 2019-01-31 23:29:58
+*/
+@-webkit-keyframes bottom-up {
+  0% {
+    height: 0; }
+  100% {
+    height: 2.5rem; } }
+@keyframes bottom-up {
+  0% {
+    height: 0; }
+  100% {
+    height: 2.5rem; } }
+@-webkit-keyframes bottom-down {
+  0% {
+    height: 2.5rem; }
+  100% {
+    height: 0; } }
+@keyframes bottom-down {
+  0% {
+    height: 2.5rem; }
+  100% {
+    height: 0; } }
+.bottom-down {
+  -webkit-animation: bottom-down .5s backwards !important;
+  animation: bottom-down 0.5s backwards !important; }
+
+#toast-container {
+  position: fixed;
+  left: 1.2rem;
+  bottom: 1.2rem;
+  width: 18%;
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif; }
+
+.toast {
+  border-radius: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #323232;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  padding: 1.1rem 1.3rem;
+  transform: translateY(150%); }
+
+.toast.bottom-up {
+  transform: translateY(0%); }
+
+/*# sourceMappingURL=toast.css.map */

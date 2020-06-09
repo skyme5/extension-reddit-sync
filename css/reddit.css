@@ -1,0 +1,18 @@
+/*
+* @Author: msumsc
+* @Date:   2018-05-23 17:03:17
+* @Last Modified by:   Sky
+* @Last Modified time: 2019-02-01 00:10:47
+*/
+.sky-d {
+  margin: 0;
+  margin-left: .5em;
+  padding-left: .5em;
+  border-left: 1px solid #cccccc;
+  color: black !important;
+  font-style: oblique !important; }
+
+.hide-button {
+  display: none; }
+
+/*# sourceMappingURL=reddit.css.map */
