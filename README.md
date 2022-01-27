@@ -7,13 +7,13 @@
 
 # Reddit Sync
 
-A simple extesion to dump reddit posts to database.
+A simple extesion to dump reddit posts to database (for old ui).
 
-This will do following things
+This will add following functionality on old reddit ui,
 
-- add `EventListener` to each reddit post to send `thing` json to preconfigured api endpoint
-- add `Save All` button to each Page to send all post `thing` to database
-- add `Download Sub` button to save all `1000` posts from subreddit
+- add `EventListener` to `save` button on each post to send `thing` json to preconfigured api endpoint (`https://localhost/api/v2/reddit`)
+- add `Save All` button to each Page to send all post `thing` to database (available at the bottom-left side of the page)
+- add `Download Sub` button to save all `1000` posts from subreddit (available at the bottom-right of the page)
 
 ## Installation
 
