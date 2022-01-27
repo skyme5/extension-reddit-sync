@@ -1,8 +1,10 @@
 var downloader = {};
 
 chrome.runtime.onMessage.addListener(function (request, sender, response) {
+    if(request.closeThis) chrome.tabs.remove(sender.tab.id);
+
     if (request.type == "reddit" && request.action == "download_start") {
-        console.log(request.type, request.action, request.data);
+        console.log(request.type, request.action);
         console.log(`SUBREDDIT_DOWNLOAD_START for ${sender.tab.title}`);
         var id = sender.tab.id;
         downloader[id] = { finished: false, started: true, sender: sender, count: 0 };
@@ -28,6 +30,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, response) {
         response({ status: true, total: downloader[id].count });
 
         console.log(`SUBREDDIT_DOWNLOAD_FINISHED for ${sender.tab.title}, downloaded total ${downloader[id].count} posts`);
+        console.log('Closing tab ' + id);
+        chrome.tabs.remove(sender.tab.id)
     }
 
     return true;
